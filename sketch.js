@@ -11,16 +11,16 @@ function setup() {
 
 function draw() {
   noFill();
-  //fill('rgba(225,0,255,.01)');    
+  fill('rgba(225,0,255,1)');    
   background(255);  
   stroke(strokeColor);
   strokeWeight(1);
   translate(width * 0.5, height * 0.5);
   rotate(radians(30));
-  for(let i = 0; i< canvasWidth; i++){
+  for(let i = 0; i< 40; i++){
      rotate(radians(1));
     rotate(frameCount / 2000.0);
-    polygon(0, 0, i * 7 , 3);
+    polygon(0, 0, i * 6 , 3);
   }
   
 }
@@ -38,6 +38,6 @@ function polygon(x, y, radius, npoints) {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth/canvasWidth, windowHeight / canvasWidth);
+  resizeCanvas(windowWidth/2, windowHeight);
 }
 
