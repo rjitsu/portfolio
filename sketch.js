@@ -1,6 +1,7 @@
 
 var strokeColor = "rgb(0,0,0)";
-
+var canvasWidth = getComputedStyle(document.documentElement)
+    .getPropertyValue('--canvasWidth');
 
 function setup() {
   var canv = createCanvas(windowWidth/2, windowHeight);    
@@ -16,7 +17,7 @@ function draw() {
   strokeWeight(1);
   translate(width * 0.5, height * 0.5);
   rotate(radians(30));
-  for(let i = 0; i< 40; i++){
+  for(let i = 0; i< canvasWidth; i++){
      rotate(radians(1));
     rotate(frameCount / 2000.0);
     polygon(0, 0, i * 7 , 3);
@@ -37,6 +38,6 @@ function polygon(x, y, radius, npoints) {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth/2, windowHeight);
+  resizeCanvas(windowWidth/canvasWidth, windowHeight / canvasWidth);
 }
 

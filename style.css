@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+:root{
+  --canvasWidth: 2;
+}
 body{
   font-family: 'Roboto Mono', monospace;
   overflow:hidden;
@@ -69,9 +72,14 @@ ul li{
     grid-template-areas: 
       "main"
       "canvus";
+      box-shadow: none;
   }
   canvas{
-    display: none;
+    position: absolute;
+    right:0;
+  }
+  :root{
+    --canvasWidth:6;
   }
 }
 
