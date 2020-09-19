@@ -11,7 +11,7 @@ function setup() {
 
 function draw() {
   noFill();
-  fill('rgba(225,0,255,1)');    
+  //fill('rgba(225,0,255,1)');    
   background(255);  
   stroke(strokeColor);
   strokeWeight(1);
