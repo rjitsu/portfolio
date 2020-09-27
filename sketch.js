@@ -12,7 +12,7 @@ function setup() {
 function draw() {
   noFill();
   //fill('rgba(225,0,255,1)');    
-  background(230,230,250);  
+  background(255);  
   stroke(strokeColor);
   strokeWeight(1);
   translate(width * 0.5, height * 0.5);
