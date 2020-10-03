@@ -185,3 +185,31 @@ img.avatar {
   
   }
 }
+
+svg{
+  transition: all 0.2s;
+}
+
+svg:hover{
+  fill: #2196f3;
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake{  
+  from,to{
+    transform: rotate(0deg);
+  }
+  20%{transform: rotate(-40deg);}
+  40%{transform: rotate(40deg);}
+  60%{transform: rotate(-40deg);}
+  80%{transform: rotate(40deg);}
+}
+
+.icon-dev{
+  transition: all 0.2s;
+}
+
+.icon-dev:hover{
+  background: #2196f3;
+  animation: shake 0.5s ease;
+}
